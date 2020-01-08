@@ -5,7 +5,11 @@ Currently journ.py only uses the file journ.txt that it creates the first time y
 
 Every run after the first will go straight to the `>` prompt where you can begin typing a new entry. Each entry is added to the end of your journal file, along with the date and time of entry.
 
-### Istallation
-You can install journ using pip:
+### Getting Started
 
-`pip install journ`
+1. You can install it by using pip. pip install journ
+
+2. Run journ in terminal.
+
+3. Have fun!
+
