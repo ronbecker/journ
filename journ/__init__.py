@@ -1,20 +1,20 @@
 """
 /----------------------------------------------------\
-|   journ.py v0.1.0 Copyright (c) 2020 Ron Becker    |
+|     journ v0.1.0 Copyright (c) 2020 Ron Becker     |
 |  --------------------------------------------------|
-|                  About journ.py                    |
+|                   About journ                      |
 |                                                    |
 | jounr.py is a command line journal program written |
 | in Python. It saves all your journal entries in a  |
 | text file called journ.txt in the same directory   |
-| as journ.py.                                       |
+| as journ.                                          |
 |                                                    |
-| To begin using journ.py after installing it just   |
-| type `journ` in terminal. A text input will appear |
-| and you can begin typing. After you are finished   |
-| just hit enter. The new entry is automatically     |
-| added to the end of journ.py with the date and     |
-| time of entry.                                     |
+| To begin using journ after installing it just type |
+| `journ` in terminal. A text input will appear and  |
+| you can begin typing. After you are finished just  |
+| hit enter. The new entry is automatically added to |
+| the end of journ.py with the date and time of      |
+| entry.                                     |
 \----------------------------------------------------/
 """
 
