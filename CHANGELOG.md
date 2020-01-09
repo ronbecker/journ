@@ -11,4 +11,6 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 ### Added
 - Original Source for journ
 - README contains description, and install instructions
+- Created a 'landing page' for journ. Currently found at:
+	https://ronbecker.github.io/journ
 
