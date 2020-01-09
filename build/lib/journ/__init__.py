@@ -6,8 +6,7 @@
 |                                                    |
 | jounr.py is a command line journal program written |
 | in Python. It saves all your journal entries in a  |
-| text file called journ.txt in the same directory   |
-| as journ.py.                                       |
+| text file called journ.txt in your home directory. |
 |                                                    |
 | To begin using journ.py after installing it just   |
 | type `journ` in terminal. A text input will appear |
@@ -32,6 +31,14 @@ class colors:
     ENDC = '\033[0m'
     BOLD = '\033[1m'
     UNDERLINE = '\033[4m'
+
+# Added some variables that should come in handy in future updates. I hope.
+app_name = "journ"
+app_version = "v0.1.0"
+app_repo = "https://github.com/ronbecker/journ"
+app_site = "https://ronbecker.github.io/journ"
+dev_name = "Ron Becker"
+dev_site = "https://ronbecker.github.io"
 
 def main():
      # Set date and home folder varialbles
@@ -75,3 +82,9 @@ def main():
              #Print a nice little confirmation message. Its even green.
              print(" ")
              print(colors.GREEN + "Entry added!" + colors.ENDC)
+
+# Honestly, I don't know what I am doing 9 times out of 10.
+# But, I liked the ease of taking notes from the command line,
+# and I wanted to work with Python, because I really like it.
+# So I made this clunky little beast.
+

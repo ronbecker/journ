@@ -4,12 +4,3 @@ Short and sweet? journ.py is a command line journal written in Python. journ.py 
 Currently journ.py only uses the file journ.txt that it creates the first time you run it. In the future I want to add the ability to choose where you want your file, and what you want to name it.
 
 Every run after the first will go straight to the `>` prompt where you can begin typing a new entry. Each entry is added to the end of your journal file, along with the date and time of entry.
-
-### Getting Started
-
-1. You can install it by using pip. pip install journ
-
-2. Run journ in terminal.
-
-3. Have fun!
-

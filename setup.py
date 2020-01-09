@@ -5,7 +5,7 @@ with open("README.md", "r") as fh:
 
 setuptools.setup(
     name="journ",
-    version="0.1.2",
+    version="0.1.0",
     author="Ron Becker",
     author_email="ronbecker@outlook.com",
     description="A really simple command line journal.",
