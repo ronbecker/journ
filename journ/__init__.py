@@ -3,7 +3,6 @@
 |     journ v0.1.3 Copyright (c) 2020 Ron Becker     |
 |----------------------------------------------------|
 |                                                    |
-|                  About journ.py                    |
 |                                                    |
 | journ is a command line journal program written in |
 | Python. It saves all your journal entries in a     |
@@ -60,7 +59,7 @@ def main():
 
     # Title, and app info that appears over entry input.
     print("")
-    print("    Welcome to " + app.name + " " + app.version + " by " + app.devname + "    ")
+    print("           Welcome to " + app.name + " " + app.version + "           ")
     print("             Copyright (c) 2020              ")
     print("")
     print("   Site: " + app.site)
