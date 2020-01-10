@@ -1,24 +1,23 @@
 """
-/----------------------------------------------------\
-|     journ v0.1.3 Copyright (c) 2020 Ron Becker     |
-|----------------------------------------------------|
-|                                                    |
-|                                                    |
-| journ is a command line journal program written in |
-| Python. It saves all your journal entries in a     |
-| text file called journ.txt in your home directory. |
-|                                                    |
-| To begin using journ after installing it just type |
-| `journ` in terminal. A text input will appear and  |
-| you can begin typing. After you are finished just  |
-| hit enter. The new entry is automatically added to |
-| the end of journ.py with the date and time.        |
-|                                                    |
-\----------------------------------------------------/
+#---------------------------------------------------#
+     journ v0.1.5 Copyright (c) 2020 Ron Becker
+#---------------------------------------------------#
+
+
+ journ is a command line journal program written in
+ Python. It saves all your journal entries in a
+ text file called journ.txt in your home directory.
+
+ To begin using journ after installing it just type
+ `journ` in terminal. A text input will appear and
+ you can begin typing. After you are finished just
+ hit enter. The new entry is automatically added to
+ the end of journ.py with the date and time.
+
+#---------------------------------------------------#
 """
 
 import os
-import subprocess
 from time import gmtime, strftime
 from pathlib import Path
 
@@ -40,17 +39,14 @@ def main():
     # A class, because I'm starting to like them way more than a bunch of variables.
     # I can't help it. Plus, it's a cleaner and more organized look in my opinion.
     class App:
-        def __init__(self, filename, name, version, site, repo, devname, devemail, devsite):
+        def __init__(self, filename, name, version, site, repo):
             self.filename = filename
             self.name = name
             self.version = version
             self.site = site
             self.repo = repo
-            self.devname = devname
-            self.devemail = devemail
-            self.devsite = devsite
 
-    app = App('journ.txt', 'journ', 'v0.1.3', 'https://ronbecker.github.io/journ', 'https://github.com/ronbecker/journ', 'Ron Becker', 'ronbecker@linuxmail.org', 'https://ronbecker.github.io')
+    app = App('journ.txt', 'journ', 'v0.1.5', 'https://ronbecker.github.io/journ', 'https://github.com/ronbecker/journ')
 
     # Set date and home folder varialbles
     today = strftime("%Y-%m-%d %H:%M:%S", gmtime())
@@ -60,12 +56,9 @@ def main():
     # Title, and app info that appears over entry input.
     print("")
     print("           Welcome to " + app.name + " " + app.version + "           ")
-    print("             Copyright (c) 2020              ")
-    print("")
+    print("             Copyright (c) 2020              \n\n")
     print("   Site: " + app.site)
     print("   Repo: " + app.repo)
-    print("")
-    print("           Write your entry below.           ")
     print("")
     # This chunk opens journ.txt in the users home directory
     # takes their input, and appends it to journ.txt along
@@ -77,11 +70,7 @@ def main():
         journ_entry.write ("\n\n")
         print("")
 
-def upgrade():
-    subprocess.call(["pip3", "install", "--upgrade", "journ"])
-    print("Finished running journ upgrade.")
-
-def egg():
+def naughty():
     print(colors.FAIL + colors.BOLD + "-------------------------------------------------------------" + colors.ENDC)
     print(" ")
     print(colors.FAIL +"Naughty John, Naughty John, does his work with his apron on." +colors.ENDC)

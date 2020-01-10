@@ -3,8 +3,12 @@ All notable changes to this project will be documented in this file.
 
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 
-## [Unreleased]
-- Ability to name journal file on first run.
+## [0.1.5] - 2020-01-10
+- Removed `import subprocess`. I forgot it was in there.
+- Removed `journ-upgrade`. Seemed more like a waste than anything to me.
+- Cleaned up `class App` because it had left over me in it.
+
+I think this will probably be it. At least for awhile. Unless I end up trying to simplify and minimize it some more.
 
 ## [0.1.4] - 2020-01-09
 - Removed extra code that wasn't really needed to achieve journ's function at the moment.
