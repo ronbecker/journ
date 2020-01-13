@@ -5,7 +5,7 @@ with open("README.md", "r") as fh:
 
 setuptools.setup(
     name="journ",
-    version="0.1.5",
+    version="0.1.7",
     author="Ron Becker",
     author_email="ronbecker@outlook.com",
     description="A really simple command line journal.",
@@ -22,7 +22,6 @@ setuptools.setup(
     entry_points={
             'console_scripts': [
                  'journ=journ:main',
-                 'journ-egg=journ:naughty',
             ]
     },
     python_requires='>=3.6',
