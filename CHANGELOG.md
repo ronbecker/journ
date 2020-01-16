@@ -3,6 +3,16 @@ All notable changes to this project will be documented in this file.
 
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 
+[Unreleased]
+- Ability to name journal file on first run.
+
+## [0.1.7] - 2020-01-16
+- Fixed the way some strings were put together.
+- Cleaned up the code a little, and made things appear a little prettier. Less spaces, and `+`'s.
+- Fixed some commenting.
+- Removed 'site' since it's not up anymore.
+- Condesed the code just a little.
+
 ## [0.1.5] - 2020-01-10
 - Removed `import subprocess`. I forgot it was in there.
 - Removed `journ-upgrade`. Seemed more like a waste than anything to me.
@@ -23,4 +33,3 @@ I think this will probably be it. At least for awhile. Unless I end up trying to
 - README contains description, and install instructions
 - Created a 'landing page' for journ. Currently found at:
 	https://ronbecker.github.io/journ
-

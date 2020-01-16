@@ -19,32 +19,29 @@
 import os
 from time import gmtime, strftime
 from pathlib import Path
-
 def main():
-
     class App:
         def __init__(self, name, version, site, repo):
             self.name = name
             self.version = version
             self.site = site
             self.repo = repo
-
+    # Class vairable to make changing things easier for me.
+    # And because I like them.
     app = App('journ', 'v0.1.7', 'https://ronbecker.github.io/journ', 'https://github.com/ronbecker/journ')
-    # Set date and home folder varialbles
+    # Set date, home folder, and file name varialbles.
     today = strftime("%Y-%m-%d %H:%M:%S", gmtime())
     home = str(Path.home())
     journ_file = home + "/journ.txt"
-
+    # Welcome Information and User input
     print("")
     print("           Welcome to ", app.name, app.version)
     print("             Copyright (c) 2020\n\n")
-    print("   Site: ", app.site)
     print("   Repo: ", app.repo)
     print("")
-    # This chunk opens journ.txt in the users home directory
-    # takes their input, and appends it to journ.txt along
-    # with the date and time, and a blank line so that each
-    # entry is a little more readable.
+    # Opens journ.txt if it exitsts, and if not it creates it. And
+    # appends the user input to the file. Along with the date and
+    # time of entry, and a blank line at the end for readablity.
     with open (journ_file, "a") as journ_entry:
         journ_entry.write (str(today) + ": \n")
         journ_entry.write (input("> "))

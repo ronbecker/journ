@@ -1,4 +1,0 @@
-[console_scripts]
-journ = journ:main
-journ-egg = journ:naughty
-
