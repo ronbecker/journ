@@ -36,10 +36,10 @@ def main():
     journ_file = home + "/journ.txt"
 
     print("")
-    print("           Welcome to " + app.name + " " + app.version + "           ")
-    print("             Copyright (c) 2020              \n\n")
-    print("   Site: " + app.site)
-    print("   Repo: " + app.repo)
+    print("           Welcome to ", app.name, app.version)
+    print("             Copyright (c) 2020\n\n")
+    print("   Site: ", app.site)
+    print("   Repo: ", app.repo)
     print("")
     # This chunk opens journ.txt in the users home directory
     # takes their input, and appends it to journ.txt along
