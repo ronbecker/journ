@@ -36,7 +36,7 @@ def main():
     # Welcome Information and User input
     print("")
     print("           Welcome to ", app.name, app.version)
-    print("             Copyright (c) 2020\n")
+    print("             Copyright (c) 2020\n\n")
     print("   Repo: ", app.repo)
     print("")
     # Opens journ.txt if it exitsts, and if not it creates it. And
